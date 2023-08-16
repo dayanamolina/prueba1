@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ejercicio2</h1>
+</body>
+
+<!-- DENTRO DE LA ETIQUETA SCRIPT SE PONE CODIGO JAVASCRIPT -->
+<!-- <script>
+  let numero = prompt('ingrese un numero entero')
+  if (numero %2 === 0) {
+    alert('Es par')
+  } else {
+    alert('Es impar')
+  }
+    
+
+    
+</script> -->
+<script>
+    let aprobado = 0
+    let distinguido = 0
+    let desaprobado = 0
+
+    let nota = prompt('Ingrese su calificacion')
+    while (nota <= 10) {
+        if (nota > 5) {
+            if (nota >= 8){
+            alert('Distinguido')
+            distinguido = distinguido + 1 
+            } else {
+                alert('Aprobado')
+                aprobado = aprobado + 1
+            }
+            
+            
+        } else {
+            alert('Desaprobado')
+            desaprobado = desaprobado + 1
+        } 
+
+        nota = prompt ('Ingrese una calificacion')
+    }
+    let mensaje = `Alumnos aprobados ${aprobado}, alumnos distinguidos ${distinguido}, alumnos desaprobados ${desaprobado}`
+    alert(mensaje)
+
+
+</script>
+
+</html>
